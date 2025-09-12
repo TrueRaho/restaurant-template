@@ -59,7 +59,7 @@ export function ReviewsSection() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed italic">"{review.text}"</p>
+                <p className="text-muted-foreground leading-relaxed italic">&quot;{review.text}&quot;</p>
               </CardContent>
             </Card>
           ))}
