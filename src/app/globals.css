@@ -6,7 +6,7 @@
 :root {
   --main-color-1: #1C1C1E;
   --main-color-2: #F5F5F7;
-  --main-color-3: #0A84FF;
+  --main-color-3: #a6241f;
   /* Updated to Apple-inspired dark theme colors */
   --background: var(--main-color-1); /* Deep Dark Gray */
   --foreground: var(--main-color-2); /* Light Text */
@@ -26,7 +26,7 @@
   --destructive-foreground: #ffffff; /* White Text for Destructive Actions */
   --border: #38383a; /* Subtle border color */
   --input: #2c2c2e; /* Input background */
-  --ring: rgba(10, 132, 255, 0.5); /* Light Blue for Ring Effects */
+  --ring: var(--main-color-3); /* Light Blue for Ring Effects */
   --chart-1: var(--main-color-3); /* Chart Color 1 */
   --chart-2: var(--main-color-2); /* Chart Color 2 */
   --chart-3: #2c2c2e; /* Chart Color 3 */
@@ -40,7 +40,7 @@
   --sidebar-accent: #2c2c2e; /* Sidebar Accent Color */
   --sidebar-accent-foreground: var(--main-color-2); /* Sidebar Accent Text */
   --sidebar-border: #38383a; /* Sidebar Border */
-  --sidebar-ring: rgba(10, 132, 255, 0.5); /* Sidebar Ring Effect */
+  --sidebar-ring: var(--main-color-3); /* Sidebar Ring Effect */
 }
 
 .dark {
@@ -62,7 +62,7 @@
   --destructive-foreground: #ffffff;
   --border: #38383a;
   --input: #2c2c2e;
-  --ring: rgba(10, 132, 255, 0.5);
+  --ring: var(--main-color-3);
   --chart-1: var(--main-color-3);
   --chart-2: var(--main-color-2);
   --chart-3: #2c2c2e;
@@ -75,7 +75,7 @@
   --sidebar-accent: #2c2c2e;
   --sidebar-accent-foreground: var(--main-color-2);
   --sidebar-border: #38383a;
-  --sidebar-ring: rgba(10, 132, 255, 0.5);
+  --sidebar-ring: var(--main-color-3);
 }
 
 @theme inline {
@@ -117,6 +117,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-instagram: var(--main-color-3);
+  --color-facebook: var(--main-color-3);
+  --color-tripadvisor: var(--main-color-3);
 }
 
 @layer base {

@@ -20,29 +20,45 @@ export function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-[#0A84FF] transition-colors duration-300"
+              className="text-muted-foreground hover:text-[var(--color-instagram)] transition-colors duration-300 
+                        focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-instagram)]/60 rounded"
               aria-label="Instagram"
             >
               <Instagram className="w-6 h-6" />
             </a>
+
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-[#0A84FF] transition-colors duration-300"
+              className="text-muted-foreground hover:text-[var(--color-facebook)] transition-colors duration-300 
+                        focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-facebook)]/60 rounded"
               aria-label="Facebook"
             >
               <Facebook className="w-6 h-6" />
             </a>
+
             <a
               href="https://tripadvisor.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-[#0A84FF] transition-colors duration-300"
+              className="text-muted-foreground hover:text-[var(--color-tripadvisor)] transition-colors duration-300 
+                        focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-tripadvisor)]/60 rounded"
               aria-label="TripAdvisor"
             >
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353L1.85 4.135.006 5.478l2.24 2.562c-.406.652-.777 1.33-1.118 2.032L0 10.072l.928.371c.341.702.712 1.38 1.118 2.032L.006 14.937l1.844 1.343 2.511-2.513c2.307 1.569 4.975 2.353 7.645 2.353s5.338-.784 7.645-2.353l2.511 2.513 1.844-1.343-2.04-2.462c.406-.652.777-1.33 1.118-2.032L24 10.072l-1.128-.001c-.341-.702-.712-1.38-1.118-2.032l2.24-2.562L22.15 4.135l-2.511 2.513c-2.307-1.569-4.975-2.353-7.645-2.353h.012zm0 2.184c1.978 0 3.956.552 5.685 1.656l-1.177 1.177c-1.355-.817-2.934-1.252-4.508-1.252s-3.153.435-4.508 1.252L6.321 8.135c1.729-1.104 3.707-1.656 5.685-1.656zm-5.685 4.508c0-1.574.435-3.153 1.252-4.508L6.396 5.302c-1.104 1.729-1.656 3.707-1.656 5.685s.552 3.956 1.656 5.685l1.177-1.177c-.817-1.355-1.252-2.934-1.252-4.508zm5.685 5.685c-1.978 0-3.956-.552-5.685-1.656l1.177-1.177c1.355.817 2.934 1.252 4.508 1.252s3.153-.435 4.508-1.252l1.177 1.177c-1.729 1.104-3.707 1.656-5.685 1.656zm5.685-5.685c0 1.574-.435 3.153-1.252 4.508l1.177 1.177c1.104-1.729 1.656-3.707 1.656-5.685s-.552-3.956-1.656-5.685L16.434 6.479c.817 1.355 1.252 2.934 1.252 4.508z" />
+              <svg
+                viewBox="0 -96 512.2 512.2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                className="h-6 w-6"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M128.2 127.9C92.7 127.9 64 156.6 64 192c0 35.4 28.7 64.1 64.1 64.1 35.4 0 64.1-28.7 64.1-64.1.1-35.4-28.6-64.1-64-64.1zm0 110c-25.3 0-45.9-20.5-45.9-45.9s20.5-45.9 45.9-45.9S174 166.7 174 192s-20.5 45.9-45.8 45.9z"></path>
+                <circle cx="128.4" cy="191.9" r="31.9"></circle>
+                <path d="M384.2 127.9c-35.4 0-64.1 28.7-64.1 64.1 0 35.4 28.7 64.1 64.1 64.1 35.4 0 64.1-28.7 64.1-64.1 0-35.4-28.7-64.1-64.1-64.1zm0 110c-25.3 0-45.9-20.5-45.9-45.9s20.5-45.9 45.9-45.9S430 166.7 430 192s-20.5 45.9-45.8 45.9z"></path>
+                <circle cx="384.4" cy="191.9" r="31.9"></circle>
+                <path d="M474.4 101.2l37.7-37.4h-76.4C392.9 29 321.8 0 255.9 0c-66 0-136.5 29-179.3 63.8H0l37.7 37.4C14.4 124.4 0 156.5 0 192c0 70.8 57.4 128.2 128.2 128.2 32.5 0 62.2-12.1 84.8-32.1l43.4 31.9 42.9-31.2-.5-1.2c22.7 20.2 52.5 32.5 85.3 32.5 70.8 0 128.2-57.4 128.2-128.2-.1-35.4-14.6-67.5-37.9-90.7zM368 64.8c-60.7 7.6-108.3 57.6-111.9 119.5-3.7-62-51.4-112.1-112.3-119.5 30.6-22 69.6-32.8 112.1-32.8S337.4 42.8 368 64.8zM128.2 288.2C75 288.2 32 245.1 32 192s43.1-96.2 96.2-96.2 96.2 43.1 96.2 96.2c-.1 53.1-43.1 96.2-96.2 96.2zm256 0c-53.1 0-96.2-43.1-96.2-96.2s43.1-96.2 96.2-96.2 96.2 43.1 96.2 96.2c-.1 53.1-43.1 96.2-96.2 96.2z"></path>
               </svg>
             </a>
           </div>
